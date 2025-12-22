@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Galaxy | Главная</title>
+
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at bottom, #1b2735, #050608);
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+
+  header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 20, 40, 0.8);
+    box-shadow: 0 0 20px rgba(100, 150, 255, 0.3);
+  }
+
+  header h1 {
+    color: #9fd3ff;
+  }
+
+  nav a {
+    margin-left: 20px;
+    color: #50e3c2;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-shadow: 0 0 10px #50e3c2;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px #4a90e2;
+  }
+
+  .hero p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    opacity: 0.9;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 250px;
+    padding: 20px;
+    background: rgba(30, 50, 80, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(100, 150, 255, 0.3);
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(10, 20, 40, 0.8);
+    opacity: 0.8;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌌 Galaxy</h1>
+  <nav>
+    <a href="#">Главная</a>
+    <a href="#">Профиль</a>
+    <a href="#">Новости</a>
+    <a href="#">Выход</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Добро пожаловать в Galaxy</h2>
+  <p>
+    Исследуй галактики, создавай проекты и открывай новые горизонты
+    вместе с нашей космической платформой.
+  </p>
+</section>
+
+<section class="cards">
+  <div class="card">🪐 Моя планета</div>
+  <div class="card">🚀 Миссии</div>
+  <div class="card">🌠 Сообщество</div>
+</section>
+
+<footer>
+  © 2025 Galaxy Project
+</footer>
+
+</body>
+</html>

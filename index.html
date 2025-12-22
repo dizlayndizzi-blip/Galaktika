@@ -1,13 +1,83 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>galaktika</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Регистрация | Galaxy</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at top, #1b2735, #090a0f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+
+  .register-box {
+    width: 350px;
+    padding: 30px;
+    background: rgba(20, 30, 60, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(100, 150, 255, 0.4);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9fd3ff;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    background: transparent;
+    border: 1px solid #4a90e2;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #4a90e2, #9b59b6);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #9b59b6;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="register-box">
+  <h2>🌌 Регистрация</h2>
+
+  <input type="text" placeholder="Имя пользователя" required>
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Пароль" required>
+  <input type="password" placeholder="Повторите пароль" required>
+
+  <button onclick="goToMain()">Создать аккаунт</button>
+</div>
+
+<script>
+  function goToMain() {
+    // здесь можно добавить проверку данных
+    window.location.href = "galaktika.html";
+  }
+</script>
+
+</body>
 </html>
